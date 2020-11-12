@@ -1,7 +1,6 @@
 package org.imd.cqrs.sample1.qs.cqrs.repository;
 
 import org.imd.cqrs.sample1.qs.model.UserAddress;
-import org.imd.cqrs.sample1.qs.model.UserContact;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -3,14 +3,8 @@ package org.imd.cqrs.sample1.qs.es.service;
 
 
 
-import org.imd.cqrs.sample1.qs.es.events.UserAddressAddedEvent;
-import org.imd.cqrs.sample1.qs.es.events.UserAddressRemovedEvent;
-import org.imd.cqrs.sample1.qs.es.events.UserContactAddedEvent;
-import org.imd.cqrs.sample1.qs.es.events.UserContactRemovedEvent;
-import org.imd.cqrs.sample1.qs.es.events.UserCreatedEvent;
 import org.imd.cqrs.sample1.qs.es.repository.EventStore;
 import org.imd.cqrs.sample1.qs.model.Address;
-import org.imd.cqrs.sample1.qs.model.Contact;
 import org.imd.cqrs.sample1.qs.model.User;
 
 import java.util.Set;

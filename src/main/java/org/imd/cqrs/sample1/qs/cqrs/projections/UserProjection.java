@@ -4,9 +4,7 @@ import org.imd.cqrs.sample1.qs.cqrs.queries.AddressByRegionQuery;
 import org.imd.cqrs.sample1.qs.cqrs.queries.ContactByTypeQuery;
 import org.imd.cqrs.sample1.qs.cqrs.repository.UserReadRepository;
 import org.imd.cqrs.sample1.qs.model.Address;
-import org.imd.cqrs.sample1.qs.model.Contact;
 import org.imd.cqrs.sample1.qs.model.UserAddress;
-import org.imd.cqrs.sample1.qs.model.UserContact;
 
 import java.util.Set;
 

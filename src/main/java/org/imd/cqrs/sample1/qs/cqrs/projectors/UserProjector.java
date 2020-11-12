@@ -2,10 +2,8 @@ package org.imd.cqrs.sample1.qs.cqrs.projectors;
 
 import org.imd.cqrs.sample1.qs.cqrs.repository.UserReadRepository;
 import org.imd.cqrs.sample1.qs.model.Address;
-import org.imd.cqrs.sample1.qs.model.Contact;
 import org.imd.cqrs.sample1.qs.model.User;
 import org.imd.cqrs.sample1.qs.model.UserAddress;
-import org.imd.cqrs.sample1.qs.model.UserContact;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -22,18 +20,6 @@ public class UserProjector {
     }
 
     public void project(User user) {
-        UserContact userContact = Optional.ofNullable(readRepository.getUserContact(user.getUserid()))
-            .orElse(new UserContact());
-        Map<String, Set<Contact>> contactByType = new HashMap<>();
-        for (Contact contact : user.getContacts()) {
-            Set<Contact> contacts = Optional.ofNullable(contactByType.get(contact.getType()))
-                .orElse(new HashSet<>());
-            contacts.add(contact);
-            contactByType.put(contact.getType(), contacts);
-        }
-        userContact.setContactByType(contactByType);
-        readRepository.addUserContact(user.getUserid(), userContact);
-
         UserAddress userAddress = Optional.ofNullable(readRepository.getUserAddress(user.getUserid()))
             .orElse(new UserAddress());
         Map<String, Set<Address>> addressByRegion = new HashMap<>();

@@ -4,12 +4,8 @@ import org.imd.cqrs.sample1.qs.cqrs.repository.UserReadRepository;
 import org.imd.cqrs.sample1.qs.es.events.Event;
 import org.imd.cqrs.sample1.qs.es.events.UserAddressAddedEvent;
 import org.imd.cqrs.sample1.qs.es.events.UserAddressRemovedEvent;
-import org.imd.cqrs.sample1.qs.es.events.UserContactAddedEvent;
-import org.imd.cqrs.sample1.qs.es.events.UserContactRemovedEvent;
 import org.imd.cqrs.sample1.qs.model.Address;
-import org.imd.cqrs.sample1.qs.model.Contact;
 import org.imd.cqrs.sample1.qs.model.UserAddress;
-import org.imd.cqrs.sample1.qs.model.UserContact;
 
 import java.util.HashSet;
 import java.util.List;
